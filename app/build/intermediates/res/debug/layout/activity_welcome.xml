@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:layout_gravity="center"
+              android:background="#fbfbfb"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/lbl_welcome"
+        android:textSize="35sp"
+        android:text="Welcome!"
+        android:textColor="#de747474"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/lbl_welcome_details"
+        android:textSize="13sp"
+        android:layout_marginTop="0dp"
+        android:text="Please fill all the required information to get started"
+        android:textColor="#de9a9a9a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/lbl_welcome_next"
+        android:textSize="23sp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/bg_material_transparent"
+        android:text="NEXT >"
+        android:textColor="#c270aec4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/activity_welcome.xml -->

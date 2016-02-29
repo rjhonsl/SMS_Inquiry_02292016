@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="5dp">
+    
+    
+    <TextView
+        android:id="@+id/lbl_branchName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch Name:" />
+
+    <EditText
+        android:id="@+id/EditText_EditBranch_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Branch Name"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/lbl_branchCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch Code:" />
+
+    <EditText
+        android:id="@+id/EditText_EditBranch_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Branch Code"
+        android:inputType="textCapCharacters" />
+
+    <LinearLayout
+        android:id="@+id/cont_button_EditBranch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/btn_EditBranch_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+        <Button
+            android:id="@+id/btn_EditBranch_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete" />
+        <Button
+            android:id="@+id/btn_EditBranch_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save Changes" />
+
+    </LinearLayout>
+
+</LinearLayout>

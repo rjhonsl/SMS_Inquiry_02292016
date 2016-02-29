@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/editText_new_messageNumber"
+        android:layout_above="@+id/rel_Container2">
+        
+        <ListView
+            android:id="@+id/listView_SubThread"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:stackFromBottom="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+             >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_Container2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_100"
+        android:gravity="center|center_horizontal"
+         >
+
+        <EditText
+            android:id="@+id/Edittext_subThread"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/imgbutton_Subthread_send"
+            android:background="#FFFFFF"
+            android:gravity="top|left"
+            android:maxHeight="180dp"
+            android:padding="5dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15sp"
+            android:hint="Message..."
+            android:scrollbarSize="4dp"
+            android:lines="3"
+            android:scrollbars="vertical"/>
+        <ImageButton
+            android:id="@+id/imgbutton_Subthread_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+			android:layout_marginRight="5dp"            
+			android:contentDescription="Send"
+            android:src="@drawable/ic_send_message" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/activity_subthread.xml -->

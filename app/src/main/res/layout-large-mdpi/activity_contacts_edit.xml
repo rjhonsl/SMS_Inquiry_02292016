@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9ecf6" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_white_bluegrey_shadowed"
+            android:layout_margin="5dp"
+            android:orientation="vertical"  >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text=" Edit Contact and Branch Information:"
+                android:textSize="23sp"
+                android:textColor="#006064" 
+                />
+
+           <!-- Contact Number -->
+           <TextView
+                android:id="@+id/textView_EDIT_CONTACT_contact_number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Contact Number: (Ex. +63 9151234567)"
+                android:textColor="#CC3f3f3f" />
+           
+            <TextView
+                android:id="@+id/number_1"
+                android:layout_below="@+id/textView_EDIT_CONTACT_contact_number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+63"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+               	android:textStyle="bold"
+               	android:textColor="#6699FF"
+               	android:textSize="20sp"
+                />
+            
+            <EditText
+                android:id="@+id/editText_EDIT_CONTACT_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_EDIT_CONTACT_contact_number_label"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/number_1"
+                android:ems="10"
+                android:textSize="21sp"
+                android:hint="@string/enter_contact_number_"
+               
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+
+           <!-- Contact Name -->
+           <TextView
+                android:id="@+id/textView_EDIT_CONTACT_contact_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/editText_EDIT_CONTACT_contact_number"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Contact Name: "
+                android:textSize="20sp"
+                android:textColor="#CC3f3f3f" />
+            <EditText
+                android:id="@+id/editText_EDIT_CONTACT_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_EDIT_CONTACT_contact_name_label"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="Enter Contact Name..."
+                android:inputType="textPersonName" 
+                android:textSize="21sp"
+                />
+
+           <!-- Branch Code -->
+           <TextView
+                android:id="@+id/editText_EDIT_CONTACT_branch_code_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/editText_EDIT_CONTACT_contact_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Branch Code: "
+                android:visibility="gone"
+                android:textColor="#CC3f3f3f" 
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/editText_EDIT_CONTACT_branch_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_EDIT_CONTACT_branch_code_label"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="Enter Branch Code..."
+                android:inputType="textPersonName" 
+                android:textSize="21sp"
+                android:visibility="gone"
+                />
+
+            
+            <!-- Contact Name -->
+           <TextView
+                android:id="@+id/editText_EDIT_CONTACT_branch_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/editText_EDIT_CONTACT_branch_code"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Branch Name: "
+                android:textColor="#CC3f3f3f" 
+                android:textSize="20sp"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/editText_EDIT_CONTACT_branch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_EDIT_CONTACT_branch_name_label"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="Enter Branch Name..."
+                android:inputType="textPersonName" 
+                android:textSize="21sp"
+                android:visibility="gone"
+                />
+            
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:id="@+id/layout_buttons"
+                android:gravity="center|center_horizontal"
+                android:layout_below="@+id/editText_EDIT_CONTACT_branch_name"
+                >
+
+            <Button
+                android:id="@+id/button_cancel_edit_contacts"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                 android:layout_marginTop="8dp"
+                 android:background="@drawable/button_answer"
+                android:textColor="#FFFFFF"
+                android:text="CANCEL" />
+
+            <Button
+                android:id="@+id/button_save_edit_contacts"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button_cancel_edit_contacts"
+                 android:layout_marginTop="8dp"
+                 android:background="@drawable/button_answer"
+                android:textColor="#FFFFFF"
+                android:text="SAVE" />
+
+            <Button
+                android:id="@+id/button_clear_edit_contacts"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button_save_edit_contacts"
+                 android:layout_marginTop="8dp"
+                android:background="@drawable/button_answer"
+                android:textColor="#FFFFFF"
+                android:text="CLEAR" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="2dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:layout_marginBottom="10dp"
+    android:background="?android:attr/activatedBackgroundIndicator" 
+   	>
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:background="@drawable/btn_white_bluegrey_shadowed"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            >
+    
+    <TextView
+        android:id="@+id/textView_answer_SENDER"
+        android:layout_width="fill_parent"
+        android:background="@drawable/background_message_header"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="15dp"
+        android:paddingTop="2dp"
+        android:text="@string/sender_"
+        android:textColor="#0a557e"
+        android:textSize="26sp"
+        />
+
+    <TextView
+        android:id="@+id/textView_answer_ANSWER"
+        android:layout_height="55dp"
+        android:layout_width="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/answer"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:gravity="center|center_vertical"
+        android:background="@drawable/bg_replied_answer"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        />
+
+    <TextView
+        android:id="@+id/textView_answer_CONTENT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_answer_SENDER"
+        android:layout_below="@+id/textView_answer_SENDER"
+        android:padding="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="9dp"
+        android:text="@string/content"
+        android:layout_marginLeft="12dp"
+        android:textColor="#616161"
+        android:textSize="20sp"
+		/>
+
+    <TextView
+        android:id="@+id/textView_answer_TIME_RECEIVED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_answer_SENDER"
+        android:layout_below="@+id/textView_answer_CONTENT"
+        android:text="@string/received_"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+         android:textColor="#757575"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_answer_STATUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_answer_TIME_RECEIVED"
+        android:layout_alignBottom="@+id/textView_answer_TIME_RECEIVED"
+        android:layout_toLeftOf="@+id/textView_answer_STATUS_TSR"
+        android:text="@string/status"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+     
+
+    <TextView
+        android:id="@+id/textView_answer_STATUS_TSR"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:padding="2dp"
+        android:gravity="center|center_vertical"
+        android:layout_alignRight="@id/textView_answer_ANSWER"
+        android:layout_alignBaseline="@+id/textView_answer_TIME_RECEIVED"
+        android:background="@drawable/button_answer"
+        android:visibility="visible"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:text="RESEND"
+		/>
+    
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/progressbar1"
+       	android:layout_alignBottom="@+id/textView_answer_TIME_RECEIVED"
+        android:layout_toLeftOf="@+id/textView_answer_STATUS" />
+
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout-large-mdpi/item_listview_answered_queries.xml -->

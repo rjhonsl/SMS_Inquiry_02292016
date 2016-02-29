@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/toast_layout_root"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp"
+              android:background="#6f84dd" >
+
+    <TextView android:id="@+id/text"
+              android:textSize="15sp"
+              android:layout_gravity="center_horizontal"
+              android:gravity="center_horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:textColor="#ffffff" />
+
+</LinearLayout><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/toast.xml -->

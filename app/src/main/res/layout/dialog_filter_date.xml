@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+    android:background="@drawable/btn_white_bluegrey_shadowed">
+
+    <TextView
+        android:id="@+id/lbl_dialog_filter_date"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="6dp"
+        android:text="Select Date"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--date -->
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_filter_date_close"
+        android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/dialog_filter_divider1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#78b4dc"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/lbl_dialog_filter_date"
+        ></View>
+
+
+    <!--from -->
+    <LinearLayout
+        android:layout_below="@+id/dialog_filter_divider1"
+        android:id="@+id/LL_filterdate"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/lbl_from"
+            android:padding="4dp"
+            android:textSize="15sp"
+            android:text="@string/from"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtfilter_from"
+            android:layout_marginRight="15dp"
+            android:layout_weight="5"
+            android:textSize="15sp"
+            android:editable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"/>
+
+    </LinearLayout>
+
+
+
+    <!--to -->
+    <LinearLayout
+        android:layout_below="@+id/LL_filterdate"
+        android:id="@+id/LL_filterdate1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/lbl_to"
+            android:padding="4dp"
+            android:textSize="15sp"
+            android:text="@string/to"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtfilter_to"
+            android:layout_marginRight="15dp"
+            android:layout_weight="5"
+            android:textSize="15sp"
+            android:editable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LL_filterdate1"
+        android:id="@+id/LL_filterdate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        >
+
+        <Button
+            android:id="@+id/btn_dialog_filter_date_ok"
+            android:text="OK"
+            android:textSize="16sp"
+            android:textColor="#676767"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_margin="20dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/dialog_filter_divider2"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="2dp"
+        android:background="#78b4dc"
+        android:layout_below="@id/LL_filterdate2" >
+    </View>
+
+
+
+
+</RelativeLayout>

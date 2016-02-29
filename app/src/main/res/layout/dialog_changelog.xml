@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="25dp"
+              android:paddingRight="25dp"
+              android:paddingTop="25dp"
+              android:paddingBottom="5dp"
+              android:gravity="center_horizontal"
+              android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/ic_code_black_24dp"
+            android:textColor="#2f7aab"
+            android:text="@string/changelog"
+            android:id="@+id/textView"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:padding="10dp"
+        android:id="@+id/dialog_filter_divider4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#78b4dc"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:layout_gravity="center_horizontal">
+
+                <!--1.8.7-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#7e829e"
+                    android:text="1.8.7 (07/11/2015)"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:paddingLeft="15dp"
+                    android:gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:textColor="#54576d"
+                    android:text="@string/log1_8_7"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <!--1.9.1-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#7e829e"
+                    android:text="1.9.1 (07/21/2015)"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:paddingLeft="15dp"
+                    android:gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:textColor="#54576d"
+                    android:text="@string/log1_9_1"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:textColor="#4cae82"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_material_transparent"
+        android:text="@string/ok"
+        android:layout_gravity="right"
+        android:id="@+id/btn_about_ok"/>
+
+</LinearLayout>

@@ -1,0 +1,318 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.santeh.inboxlistproject"
+    android:versionCode="34"
+    android:versionName="@string/version_number" >
+
+    <uses-sdk
+        android:maxSdkVersion="21"
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE" />S
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/banner2"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme_Blue"
+        android:name="com.santeh.inboxlistproject.util.SmsInquiryApp"
+        >
+
+        <!-- ACTIVITIES -->
+        <activity
+            android:name=".main.Activity_Home"
+            android:label="SMS Inquiry App"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".main.Activity_NewMessage"
+            android:label="New Message"
+            android:windowSoftInputMode="adjustResize"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_contacts" />
+        </activity>
+        
+        <activity
+            android:name=".main.Activity_NewMessage_Unreg"
+            android:label="New Message"
+            android:windowSoftInputMode="adjustResize"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_contacts" />
+        </activity>
+        
+        <activity
+            android:name=".main.MainActivity"
+            android:label="Delivery Request" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.Activity_MainInbox_SubThread"
+            android:label="Sub Thread" 
+            android:screenOrientation="portrait"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.Activity_Queue"
+            android:label="Queued Requests "
+            android:screenOrientation="portrait"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+
+        <!-- Inbox -->
+        <activity
+            android:name=".main.Activity_Inbox"
+            android:label="Inbox" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sends SMS-mms -->
+        <activity
+            android:name=".main.Activity_Answered_Queries"
+            android:label="Answered Inquiries"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        
+         <!-- Sends SMS-mms -->
+        <activity
+            android:name=".main.Activity_UnregInbox_MainThread"
+            android:label="Unregistered Messages"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.Activity_Wiz_ContactNum"
+            android:label="Setup Wizard" >
+        </activity>
+
+        <activity
+            android:name=".main.Activity_Welcome"
+            android:label="Setup Wizard"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+        <activity
+            android:name=".main.Activity_Wiz_OrderCode"
+            android:label="Setup Wizard" >
+        </activity>
+
+        <activity
+            android:name=".main.Activity_Preference_Settings"
+            android:label="Settings" >
+        </activity>
+
+        <activity
+            android:name=".main.Activity_Wiz_Branch"
+            android:label="Setup Wizard"
+            >
+        </activity>
+
+        <activity
+            android:name=".main.Activity_Contacts_add"
+            android:label="Add New Contact" >
+        </activity>
+        <activity
+            android:name=".main.Activity_Contacts"
+            android:label="Contacts" >
+        </activity>
+        <activity
+            android:name=".main.Activity_Contacts_view"
+            android:label="Contact Information" >
+        </activity>
+        <activity
+            android:name=".main.Activity_Contacts_edit"
+            android:label="Edit Contact Information" >
+        </activity>
+        <activity
+            android:name=".main.Activity_Preference_OrderCode"
+            android:label="Order Types/Codes" >
+        </activity>
+        
+         <activity
+            android:name=".main.Activity_Branch"
+            android:label="Branches" >
+        </activity>
+
+        <!-- RECEIVERS -->
+
+
+        <!-- For Receiving SMS -->
+        <receiver
+            android:name="com.santeh.inboxlistproject.br.SMS_BroadcastReceiver"
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- For Receiving MMS -->
+        <receiver
+            android:name="com.santeh.inboxlistproject.br.MMSReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Quick Response -->
+        <service
+            android:name="com.santeh.inboxlistproject.br.HeadlessSmsSendService"
+            android:exported="true"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE" >
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.santeh.inboxlistproject.br.SMS_delivery" >
+            <intent-filter>
+                <action android:name="SMS_SENT" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.santeh.inboxlistproject.br.DeliveryBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="SMS_DELIVERED" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.santeh.inboxlistproject.br.BackupDbReceiver" >
+        </receiver>
+    </application>
+</manifest>

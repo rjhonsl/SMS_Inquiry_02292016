@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/answered_filters"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/white_filter"
+        android:title="Filter"
+        />
+
+</menu><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/menu/activity_answered_queries_menu.xml -->

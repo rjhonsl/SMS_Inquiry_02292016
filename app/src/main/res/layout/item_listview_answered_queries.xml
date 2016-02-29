@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="2dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:background="?android:attr/activatedBackgroundIndicator" 
+   	>
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:background="@drawable/btn_white_bluegrey_shadowed"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            >
+
+
+    
+    <TextView
+        android:id="@+id/textView_answer_SENDER"
+        android:layout_width="fill_parent"
+        android:background="@drawable/background_message_header"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="13dp"
+        android:paddingTop="2dp"
+        android:text="@string/sender_"
+        android:textColor="#585d78"
+        android:textSize="19sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView_answer_CONTENT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_answer_SENDER"
+        android:layout_below="@+id/textView_answer_SENDER"
+        android:padding="7dp"
+        android:layout_marginRight="9dp"
+        android:text="@string/content"
+        android:layout_marginLeft="12dp"
+        android:textColor="#d6616161"
+        android:textSize="15sp"
+		/>
+
+    <TextView
+        android:id="@+id/textView_answer_TIME_RECEIVED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_answer_SENDER"
+        android:layout_below="@+id/textView_answer_CONTENT"
+        android:text="@string/received_"
+        android:paddingLeft="7dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+         android:textColor="#757575"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_answer_STATUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/textView_answer_STATUS_TSR"
+        android:layout_alignBaseline="@+id/textView_answer_TIME_RECEIVED"
+        android:text="@string/status"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView_answer_ANSWER"
+          android:layout_height="40dp"
+          android:layout_width="40dp"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="5dp"
+          android:text="@string/answer"
+          android:textColor="#FFFFFF"
+          android:textSize="12sp"
+          android:gravity="center|center_vertical"
+          android:background="@drawable/bg_replied_answer"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          />
+    
+     
+    <TextView
+        android:id="@+id/textView_answer_STATUS_TSR"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="3dp"
+        android:padding="1dp"
+        android:gravity="center|center_vertical"
+        android:layout_alignRight="@id/textView_answer_ANSWER"
+        android:layout_alignBaseline="@+id/textView_answer_TIME_RECEIVED"
+        android:background="@drawable/button_answer"
+        android:visibility="visible"
+        android:textSize="12sp"
+        android:textColor="#909090"
+        android:text="RESEND"
+		/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+       	android:layout_alignBaseline="@+id/textView_answer_TIME_RECEIVED"
+        android:layout_toLeftOf="@+id/textView_answer_STATUS_TSR" />
+
+    </RelativeLayout>
+</RelativeLayout>

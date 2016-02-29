@@ -1,0 +1,79 @@
+<resources>
+
+    <string name="app_name">Santeh SMS Inquiry</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">SMS Inquiry App</string>
+    <string name="sender_">"Sender: "</string>
+    <string name="answer">Answer</string>
+    <string name="prompt_contact">Select Contact</string>
+    <string name="content">CONTENT</string>
+    <string name="received_">Received:</string>
+    <string name="status">Status</string>
+    <string name="enter_contact_and_branch_information">Enter Contact and Branch Information:</string>
+    <string name="enter_contact_number_">Enter Contact Number…</string>
+    <string name="_delivery_request">"Delivery Request"</string>
+    
+    <string-array name="sample_list">
+        <item>contact1</item>
+        <item>contact2</item>
+        <item>contact3</item>
+        <item>contact4</item>
+        <item>contact5</item>
+        <item>contact6</item>
+        <item>contact7</item>
+        <item>contact8</item>
+        <item>contact9</item>
+        <item>contact10</item>
+        <item>contact11</item>
+        <item>contact12</item>
+        <item>contact13</item>
+        <item>contact14</item>
+        <item>contact15</item>
+        <item>contact16</item>
+        <item>contact17</item>
+        <item>contact18</item>
+        <item>contact19</item>
+        <item>contact20</item>
+        <item>contact21</item>
+        <item>contact22</item>
+        <item>contact23</item>
+        <item>contact24</item>
+        <item>contact25</item>
+        <item>contact26</item>
+        <item>contact27</item>
+        <item>contact28</item>
+        <item>contact29</item>
+        <item>contact30</item>
+    </string-array>
+
+    <string name="add_new_branch">Add New Branch</string>
+    <string name="version_number">1.9.1</string>
+
+
+    <!--font awesome-->
+    <string name="fa_chevron_right">&#xf054;</string>
+    <string name="fa_gear">&#xf013;</string>
+    <string name="fa_truck">&#xf0d1;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_caret_right">&#xf0da;</string>
+    <string name="fa_cross">"&#xf00d;"</string>
+    <string name="fa_check">"&#xf00c;"</string>
+    <!--font awesiome -->
+
+    <string name="from">From :</string>
+    <string name="to">To :</string>
+    <string name="app_title">Santeh SMS Inquiry</string>
+    <string name="ok">OK</string>
+    <string name="email">arjhonlajom@gmail.com</string>
+    <string name="lbl_email">Send bug report to:</string>
+    <string name="changelog">Changelogs</string>
+    <!-- 1.8.7 -->
+    <string name="log1_8_7">&#8226; UI updates on most activities\n&#8226; bug fixes\n&#8226; Add filter for branch and replies\n&#8226; remove main inbox, unregistered inbox, filtered inbox\n&#8226; remove set as default messaging app\n&#8226; added app info and change-log on settings</string>
+    <string name="log1_9_1">&#8226; Added setup wizard\n&#8226; Added on queue requests\n&#8226; Add filter for branch and replies\n&#8226; Minor bug fixes\n&#8226; UI Changes\n&#8226; App adjustment for lower ppi devices \n&#8226; Bug fixes on dual SIM devices</string>
+    <string name="queue">On Queue</string>
+    <string name="pendingRequest">No Pending Request</string>
+    <string name="lblName">Name</string>
+    <string name="lbl_contactnum">Number</string>
+    <string name="sample_num">Enter number...</string>
+</resources>

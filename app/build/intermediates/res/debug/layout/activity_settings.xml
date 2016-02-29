@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#cadada"  android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <PreferenceCategory
+        android:textColor="#006064"
+        android:title="GENERAL SETTINGS"
+
+        android:key="pref_generalSettings" >
+
+        <PreferenceScreen
+            android:id="@+id/settings_delivery_code"
+            android:key="pref_dev"
+            android:icon="@drawable/ic_flag_black_24dp"
+            android:onClick="onClick_deliveryCode"
+            android:textSize="15sp"
+            android:title="Delivery Code" >
+        </PreferenceScreen>
+        
+        <PreferenceScreen
+            android:id="@+id/settings_defaultSMS"
+            android:key="pref_default_sms"
+            android:onClick="onClick_defaultSMS"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:title="Set as default SMS app" >
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+    
+
+    <PreferenceCategory
+        android:textColor="#006064"
+        android:title="SECURITY" >
+
+        
+        <CheckBoxPreference
+            android:id="@+id/settings_enable_password"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:key="pref_enable_password"
+            android:title="Password Protection" />
+        
+        <EditTextPreference
+            android:id="@+id/settings_set_password"
+            android:inputType="number"
+            android:key="pref_set_password"
+           	android:maxLength="4"
+            android:icon="@drawable/ic_lock_open_black_24dp"
+            android:dependency="pref_enable_password"
+            android:title="Change Password" 
+            android:hint="4-digit maximum"
+            />
+        
+        <EditTextPreference
+            android:id="@+id/settings_set_retrieve"
+            android:inputType="number"
+            android:key="pref_set_retrieve"
+           	android:maxLength="13"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:dependency="pref_enable_password"
+            android:title="Retrieval Number"
+            android:hint="Enter Number"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="NOTIFICATIONS" >
+        <CheckBoxPreference
+            android:id="@+id/settings_show_notif"
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:key="pref_show_notif"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notification on Status Bar" />
+
+        <CheckBoxPreference
+            android:id="@+id/settings_silent_mode"
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:icon="@drawable/ic_notifications_off_black_24dp"
+            android:key="pref_silent_mode"
+            android:title="Silent Mode" />
+
+        <RingtonePreference
+            android:id="@+id/settings_tone"
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="pref_silent_mode"
+            android:key="pref_tone"
+            android:ringtoneType="notification"
+            android:icon="@drawable/ic_audiotrack_black_24dp"
+            android:summary="Select Notification Tone"
+            android:title="RingTone" />
+
+        <CheckBoxPreference
+            android:id="@+id/settings_vibrate"
+            android:defaultValue="true"
+            android:key="pref_vibrate"
+            android:icon="@drawable/ic_vibration_black_24dp"
+            android:title="Vibrate" />
+    </PreferenceCategory>
+    
+    
+    <PreferenceCategory
+        android:textColor="#006064"
+        android:title="DATA MANAGEMENT" >
+        
+        
+        <CheckBoxPreference
+            android:id="@+id/settings_auto_backup"
+            android:defaultValue="false"
+            android:key="pref_auto_backup"
+            android:icon="@drawable/ic_refresh_black_24dp"
+            android:title="AutoBackup"/>
+        
+        <PreferenceScreen
+            android:id="@+id/settings_auto_backup_time"
+            android:key="pref_auto_backup_time"
+            android:dependency="pref_auto_backup"
+            android:icon="@drawable/ic_timer_black_24dp"
+            android:summary="9:00AM"
+            android:title="Backup time" 
+            android:enabled="false"
+            android:visibility="gone"
+            />
+
+        <PreferenceScreen
+            android:id="@+id/settings_export"
+            android:key="pref_export"
+            android:textSize="15sp"
+            android:icon="@drawable/ic_file_upload_black_24dp"
+            android:title="Create Backup">
+        </PreferenceScreen>
+        
+         <PreferenceScreen
+            android:id="@+id/settings_import"
+            android:key="pref_import"
+            android:icon="@drawable/ic_file_download_black_24dp"
+            android:textSize="15sp"
+            android:title="Restore Backup" 
+            >
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:textColor="#006064"
+        android:title="APP INFORMATION"
+        android:key="pref_info" >
+
+        <PreferenceScreen
+            android:id="@+id/settings_aboutUs"
+            android:key="pref_about"
+            android:icon="@drawable/ic_smartphone_black_24dp"
+            android:summary="@string/version_number"
+            android:textSize="15sp"
+            android:title="Santeh SMS Inquiry">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:id="@+id/settings_changelogs"
+            android:key="pref_changelogs"
+            android:icon="@drawable/ic_code_black_24dp"
+            android:textSize="15sp"
+            android:title="Changelogs">
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/activity_settings.xml -->

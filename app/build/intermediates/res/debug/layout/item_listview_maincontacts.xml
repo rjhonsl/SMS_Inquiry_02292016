@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/item_simple_contactsLayout"
+    android:padding="5dp"
+    android:paddingLeft="5dp"
+    
+    >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_mainInbox_contactName"
+        android:textSize="17sp"
+        />
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_mainInbox_contactNumber"
+        android:layout_below="@id/textView_mainInbox_contactName"
+        android:textSize="16sp"
+        android:textColor="#4C4C4C"
+        />
+    
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_mainInbox_contactType"
+        android:layout_toRightOf="@id/textView_mainInbox_contactName"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@id/textView_mainInbox_contactName"
+        android:layout_marginLeft="4dp"
+        android:textColor="#808080"
+        />
+</RelativeLayout>
+<!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/item_listview_maincontacts.xml -->

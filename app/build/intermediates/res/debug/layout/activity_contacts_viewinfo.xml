@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#d9ecf6" 
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:background="@drawable/btn_white_bluegrey_shadowed"
+            android:layout_margin="5dp" >
+
+            <!-- Name -->
+
+            <TextView
+                android:id="@+id/textView_contactViewInfo_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Name: "
+                android:textColor="#006064"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_contactViewInfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_contactViewInfo_name_label"
+                android:layout_below="@+id/textView_contactViewInfo_name_label"
+                android:text="My Name"
+                android:textColor="#CC3f3f3f"
+                android:textSize="18sp"
+                android:layout_marginLeft="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Contact Number -->
+
+            <TextView
+                android:id="@+id/textView_contactViewInfo_number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_contactViewInfo_name_label"
+                android:layout_below="@+id/textView_contactViewInfo_name"
+                android:layout_marginTop="8dp"
+                android:text="Contact Number:"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/textView_contactViewInfo_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_contactViewInfo_name_label"
+                android:layout_below="@+id/textView_contactViewInfo_number_label"
+                android:text="091234567891"
+                android:textColor="#CC3f3f3f"
+                android:textSize="18sp"
+                android:layout_marginLeft="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Branch COde -->
+
+            <TextView
+                android:id="@+id/textView_contactViewInfo_branch_code_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_contactViewInfo_name_label"
+                android:layout_below="@+id/textView_contactViewInfo_number"
+                android:layout_marginTop="8dp"
+                android:text="Branch Code:"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/textView_contactViewInfo_branch_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_contactViewInfo_name_label"
+                android:layout_below="@+id/textView_contactViewInfo_branch_code_label"
+                android:text="CT10"
+                android:textColor="#CC3f3f3f"
+                android:textSize="18sp"
+                android:layout_marginLeft="4dp"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Branch Name -->
+
+            <TextView
+                android:id="@+id/textView_contactNiewInfo_branchName_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_contactViewInfo_name_label"
+                android:layout_below="@+id/textView_contactViewInfo_branch_code"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:text="Branch Name:"
+                android:textColor="#006064"
+                android:textSize="20sp"
+                android:visibility="gone"
+                 />
+
+            <TextView
+                android:id="@+id/textView_contactViewInfo_branchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_contactViewInfo_name_label"
+                android:layout_below="@+id/textView_contactNiewInfo_branchName_label"
+                android:text="Bulacan"
+                android:textColor="#CC3f3f3f"
+                android:textSize="18sp"
+                android:layout_marginLeft="4dp"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/activity_contacts_viewinfo.xml -->

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d9ecf6" 
+    android:paddingTop="6dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/date_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center|center_vertical"
+        android:background="@drawable/bg_button_darkblue"
+        android:padding="4dp"
+        android:visibility="gone" >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            >
+            
+            
+            <EditText
+                android:id="@+id/edit_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_white_bluegrey_shadowed"
+                android:gravity="center|center_vertical"
+                android:hint="set Contact"
+                android:focusable="false"
+                android:layout_marginTop="3dp"
+                android:inputType="textCapSentences"
+                android:layout_below="@+id/editTextDate_To"
+                android:visibility="gone"
+                />
+            
+            <Spinner
+                android:layout_marginTop="3dp"
+                android:id="@+id/spinner1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinnner_background"
+                android:layout_below="@+id/editTextDate_To"
+                style="@android:style/Widget.Spinner"
+                
+                />
+            
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:background="@drawable/btn_white_bluegrey_shadowed"
+                android:gravity="center|center_vertical"
+                android:hint="Date From"
+                android:inputType="textCapSentences" />
+
+
+            <EditText
+                android:id="@+id/editTextDate_To"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextDate"
+                android:layout_marginTop="3dp"
+                android:focusable="false"
+                android:background="@drawable/btn_white_bluegrey_shadowed"
+                android:gravity="center|center_vertical"
+                android:hint="Date To"
+                android:inputType="textCapSentences" />
+            
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cont_answeredQuery_filterButtons"
+                android:layout_below="@id/spinner1"
+                android:orientation="horizontal">
+                
+                <Button
+                android:id="@+id/button_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_answer"
+                android:gravity="center|center_vertical"
+                android:padding="1dp"
+                android:text="Filter"
+                android:textColor="#f2f2f2"
+                android:textSize="17sp"
+                android:layout_weight="1" />
+            
+            <Button
+                android:id="@+id/button_clear_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_answer"
+                android:gravity="center|center_vertical"
+                android:padding="1dp"
+                android:text="Clear Filter"
+                android:textColor="#f2f2f2"
+                android:textSize="17sp" 
+                android:layout_weight="1"/>
+            </LinearLayout>
+
+            
+            
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:animateLayoutChanges="true"
+        android:id="@+id/listView_answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_below="@id/date_layout" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/lbl_answeredQueries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="#8e9fdf"
+        android:text="No queries to show."
+        android:textSize="13sp" />
+
+
+</RelativeLayout><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/activity_answered_queries.xml -->

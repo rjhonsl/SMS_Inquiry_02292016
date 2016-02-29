@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyTheme_Blue" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_navigate_before_white_24dp</item>
+        <item name="android:actionMenuTextColor">#f7f7f7</item>
+        
+    </style>
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:background">#d51197e1</item>
+        <item name="android:icon">@drawable/f</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+</resources>

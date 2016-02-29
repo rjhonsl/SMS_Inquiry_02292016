@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_appwid_detail_msg"
+    style="@drawable/border"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp"
+    android:layout_marginTop="4dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:background="@drawable/btn_white_bluegrey_shadowed"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp">
+
+        <TextView
+            android:id="@+id/txt_msgTO"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/background_message_header"
+            android:text="From: 0195125125"
+            android:textColor="#0a557e"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/txt_messageContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_msgTO"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:text="This is a message. ChugsChugschugs"
+            android:textColor="#CC3f3f3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/txt_messageContent"
+            android:layout_marginRight="4dp"
+            android:text="12:12:12 12-12-12"
+            android:textColor="#6a6a6a"
+            android:textSize="13sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/cmdYes"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/cmdNo"
+            android:gravity="center"
+            android:background="@drawable/bg_button_darkblue"
+            android:padding="1dp"
+            android:text="YES"
+            android:textColor="#f2f2f2"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/cmdNo"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/imageButton1"
+            android:background="@drawable/bg_button_darkblue"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="NO"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#f2f2f2"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/imageButton1"
+            android:layout_width="60dp"
+            android:visibility="gone"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/bg_button_darkblue"
+            android:paddingLeft="18dp"
+            android:drawableLeft="@android:drawable/sym_call_outgoing"
+            android:contentDescription="Call When Tapped"
+            android:src="@android:drawable/sym_call_outgoing" />
+        
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/message_list_item.xml -->

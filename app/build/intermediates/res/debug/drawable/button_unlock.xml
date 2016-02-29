@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"> <!-- if pressed -->
+		<shape>
+            <solid android:color="#236f98" />
+            <stroke android:width="3dp" 
+                android:color="#236f98" />
+            <corners android:radius="20dp" />
+            <padding 
+                android:bottom="10dp" 
+                android:left="18dp" 
+                android:right="18dp" 
+                android:top="10dp" />
+        </shape>
+	</item>
+	
+    
+    
+   <item>
+    <layer-list>
+        <item android:bottom="1.5dp" android:left="1dp">
+            <shape>
+                 <gradient
+	            android:startColor="#2f89ba"
+	            android:endColor="#2f89ba"
+	            android:angle="270" />
+                <stroke
+	            android:width="2dp"
+	            android:color="#2f89ba"/><!-- outline Color -->
+                <corners
+	            android:radius="20dp" />
+                <padding 
+                android:bottom="10dp" 
+                android:left="18dp" 
+                android:right="18dp" 
+                android:top="10dp" />
+            </shape>
+        </item>
+    </layer-list>
+</item>
+    
+    
+
+</selector><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/drawable/button_unlock.xml -->

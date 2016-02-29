@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" 
+    android:id="@+id/relative_layout_mainThread">
+    
+	<TextView 
+	    android:id="@+id/TextView_main_Thread_number"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="+12345678"
+	    android:textSize="21sp"
+	    android:textStyle="bold"
+	    />
+	
+	<TextView 
+	    android:id="@+id/TextView_main_Thread_messageCount"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="12"
+	    android:layout_alignParentRight="true"
+	    android:textSize="21sp"
+	    android:textColor="#999999"
+	    android:layout_alignBaseline="@id/TextView_main_Thread_number"
+	    />
+	
+	
+	<TextView 
+	    android:id="@+id/TextView_main_Thread_Content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_width		="fill_parent"
+	    android:layout_height		="wrap_content"
+	    android:text				="A message, this is. "
+	    android:layout_below			="@id/TextView_main_Thread_messageCount"
+	    android:ellipsize				="end" 
+	    android:lines                   = "1"
+        android:ems                     = "3"
+        android:singleLine			="true"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_toLeftOf="@+id/TextView_main_Thread_date"
+	    />
+	
+	<TextView 
+	    android:id="@+id/TextView_main_Thread_date"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Feb 1 2:45PM"
+	    android:layout_alignParentRight="true"
+	    android:textSize="20sp"
+	    android:layout_alignBaseline="@id/TextView_main_Thread_Content"
+	    />
+    
+</RelativeLayout>
+<!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout-large-mdpi/item_listview_maininbox.xml -->

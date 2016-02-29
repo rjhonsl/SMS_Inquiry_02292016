@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ListView 
+	    android:id="@+id/listview_branches"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:entries="@array/sample_list">
+	</ListView>
+</LinearLayout>
+<!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout-large-mdpi/activity_branch.xml -->

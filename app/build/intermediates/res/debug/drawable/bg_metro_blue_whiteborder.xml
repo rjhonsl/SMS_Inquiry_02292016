@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"> <!-- if pressed -->
+        <layer-list>
+            <item android:right="-1dp" android:top="4dp" android:left="2dp" android:bottom="-5dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#3b3d3b3a" />
+                    <corners android:radius="10dp" android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp"/>
+                </shape>
+            </item>
+            <item android:bottom="1dp" android:left="1dp">
+                <shape>
+                    <solid android:color="#236f98" />
+                    <stroke android:width="2dp"
+                            android:color="#22e9e6eb" />
+                    <corners android:radius="3dp" />
+                    <padding
+                        android:left="10dp"
+                        android:right="10dp"
+                        android:top="12dp"
+                        android:bottom="12dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+    <item>
+        <layer-list>
+            <item android:right="-1dp" android:top="4dp" android:left="2dp" android:bottom="-5dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#3b3d3b3a" />
+                    <corners android:radius="10dp" android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp"/>
+                </shape>
+            </item>
+            <item android:bottom="4dp" android:left="1dp">
+                <shape>
+                    <solid
+                        android:color="#3ca4e2" />
+                    <stroke
+                        android:color="#00e6eaff"
+                        android:width="1sp"/><!-- outline Color -->
+                    <corners
+                        android:radius="3dp" />
+                    <padding
+                        android:right="10dp"
+                        android:left="10dp"
+                        android:top="12dp"
+                        android:bottom="12dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/drawable/bg_metro_blue_whiteborder.xml -->

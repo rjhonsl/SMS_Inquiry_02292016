@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_subThread"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp" >
+
+    <RelativeLayout
+        android:id="@+id/rel_subthread_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView_subthread_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="0dp"
+            android:layout_marginBottom="3dp"
+            android:text="Content: This is message"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_Subthread_Container_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_subthread_content" >
+
+            <TextView
+                android:id="@+id/textView_Subthread_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time: 00:00:00 PM"
+                android:textColor="#4D4D4D"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView_SubThread_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textView_Subthread_time"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/textView_Subthread_time"
+                android:text="SENT"
+                android:textColor="#4D4D4D"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

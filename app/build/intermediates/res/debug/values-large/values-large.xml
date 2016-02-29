@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/values-large/dimens.xml -->
+    <eat-comment/>
+    <dimen name="text_size">18sp</dimen>
+</resources>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#3ca4e2" > <!--  @drawable/bgimage_blue_water -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="?android:attr/activatedBackgroundIndicator" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButton_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_unlock"
+                android:contentDescription="Lock/Unlock Contact And Settings"
+                android:src="@drawable/ic_lock_white" />
+
+
+            <ImageView
+                android:id="@+id/textView_APP_TITLE"
+                android:scaleType="fitCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/banner2"/>
+
+            
+            <Button
+                android:id="@+id/button_home_inbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_APP_TITLE"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button_darkblue"
+                android:drawableLeft="@drawable/ic_white_inbox"
+                android:drawableRight="@drawable/white_arrow_right"
+                android:gravity="left|center_vertical"
+                android:lineSpacingExtra="3dp"
+                android:text="  Inbox"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/button_home_unreginbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_home_inbox"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_button_darkblue"
+                android:drawableLeft="@drawable/ic_unregistered"
+                android:drawableRight="@drawable/white_arrow_right"
+                android:gravity="left|center_vertical"
+                android:lineSpacingExtra="3dp"
+                android:text="  Unregistered Messages"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_home_delivery_request"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_home_unreginbox"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/bg_metro_blue_whiteborder"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/_delivery_request"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="normal" />
+
+
+            <Button
+                android:id="@+id/button_home_answered_request"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_home_delivery_request"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_metro_blue_whiteborder"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="Answered Requests"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:textSize="21sp"
+                />
+
+
+             <Button
+                android:id="@+id/button_home_queue"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_home_answered_request"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_metro_blue_whiteborder"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/queue"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:textSize="21sp"
+                />
+
+
+            <!-- COUNTER -->
+            <RelativeLayout
+                android:layout_marginBottom="20dp"
+                android:layout_alignBaseline="@id/button_home_delivery_request"
+                android:layout_centerHorizontal="true"
+                android:translationX="100dp"
+                android:translationY="-42dp"
+                android:id="@+id/rl_home_requestcounter"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+                <ImageView
+                    android:id="@+id/img_home_counterbg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_redcircle"/>
+                <TextView
+                    android:id="@+id/lbl_home_requestCounter"
+                    android:text="20"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@id/button_home_queue"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_home_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/bg_metro_blue_whiteborder"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:text="@string/fa_user"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/button_home_branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:text="@string/fa_truck"
+                    android:background="@drawable/bg_button_darkblue"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/button_home_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:text="@string/fa_gear"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_darkblue"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

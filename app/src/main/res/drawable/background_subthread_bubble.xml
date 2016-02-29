@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:state_pressed="true"> <!-- if pressed -->
+		 <layer-list>
+         <item android:right="-2dp" android:top="2dp" android:left="2dp">
+            <shape>
+                <corners android:radius="3dp" />
+                <padding android:left="30dp"/>
+            </shape>
+        </item> 
+        <item android:bottom="1.5dp" android:left="1dp">
+            <shape>
+                 <gradient
+	            android:startColor="#5CD65C"
+	            android:endColor="#33CC33"
+	            android:angle="270" />
+                <stroke
+	            android:width="2dp"
+	            android:startColor="#33CC33"
+	            android:endColor="#33CC33"/><!-- outline Color -->
+                <corners
+	            android:radius="20dp"
+	            android:bottomRightRadius="0dp"
+	             />
+                <padding 
+                android:bottom="7dp" 
+                android:left="10dp" 
+                android:right="15dp" 
+                android:top="10dp" />
+            </shape>
+        </item>
+    </layer-list>
+	</item>
+	
+    
+   <item>
+    <layer-list>
+         <item android:right="-2dp" android:top="2dp" android:left="2dp">
+            <shape >
+                <corners android:radius="3dp" />
+                <padding android:left="30dp"/>
+            </shape>
+        </item> 
+        <item android:bottom="1.5dp" android:left="1dp">
+            <shape>
+                 <gradient
+	            android:startColor="#5CD65C"
+	            android:endColor="#33CC33"
+	            android:angle="270" />
+                <stroke
+	            android:width="2dp"
+	            android:startColor="#33CC33"
+	            android:endColor="#33CC33"/><!-- outline Color -->
+                <corners
+	            android:radius="20dp"
+	            android:bottomRightRadius="0dp"
+	             />
+                <padding 
+                android:bottom="7dp" 
+                android:left="10dp" 
+                android:right="15dp" 
+                android:top="10dp" />
+            </shape>
+        </item>
+    </layer-list>
+</item>
+    
+    
+
+</selector>

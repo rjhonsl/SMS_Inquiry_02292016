@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#636771"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:text="Order Types"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="5"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#606060"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp"
+                android:text="Type"
+                android:layout_weight="5"
+                />
+
+            <EditText
+                android:padding="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#587b95"
+                android:inputType="textCapWords"
+                android:hint="ex. Santeh Feeds Corp"
+                android:maxLength="20"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Santeh Feeds Corp."
+                android:background="#00000000"
+                android:layout_weight="1"
+                android:id="@+id/txt_wiz_deliveryType"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#85a5a5a5"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#606060"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp"
+                android:text="Code"
+                android:layout_weight="5"
+                android:id="@+id/textView21"/>
+
+            <EditText
+                android:padding="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="#587b95"
+                android:layout_weight="1"
+                android:hint="ex. SFC"
+                android:text="SFC"
+                android:enabled="false"
+                android:maxLength="3"
+                android:background="#00000000"
+                android:ems="10"
+                android:id="@+id/txt_wiz_deliveryCode"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#85a5a5a5"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Values are default. No need to Edit. "
+            android:textColor="#a787364d"
+            android:id="@+id/txt1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_wiz_delivery_back"
+            android:layout_weight="1"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:background="@drawable/bg_material_transparent"
+            android:contentDescription="Back"/>
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_wiz_delivery_next"
+            android:layout_weight="1"
+            android:src="@drawable/ic_check_black_24dp"
+            android:background="@drawable/bg_material_transparent"
+            android:contentDescription="Next"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout><!-- From: file:/C:/Android%20Studio%20Projects/SMS%20Inquiry/app/src/main/res/layout/activity_wiz_ordercode.xml -->
